@@ -15,6 +15,7 @@ export class EInvoice implements INodeType {
 		group: ['transform'],
 		icon: { light: 'file:eInvoice.svg', dark: 'file:eInvoice.dark.svg' },
 		version: 1,
+		subtitle: '={{ $parameter["operation"] + ": " + $parameter["resource"] }}',
 		description: 'Handle E-Invoices (ZUGFeRD / XRechnung / Factur-X / EN-16931)',
 		defaults: {
 			name: 'E-Invoice',
@@ -54,7 +55,7 @@ export class EInvoice implements INodeType {
 					{
 						name: 'Extract Invoice Data',
 						value: 'extraction',
-						action: 'Extract Invoice Data',
+						action: 'Extract invoice data',
 						description: 'Extracts the invoice data from a PDF or XML file',
 					},
 				],
