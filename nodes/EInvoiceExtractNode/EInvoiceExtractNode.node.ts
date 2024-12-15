@@ -6,15 +6,15 @@ import type {
 } from 'n8n-workflow';
 import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
 
-export class ExampleNode implements INodeType {
+export class ExtractFromEInvoiceNode implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Example Node',
-		name: 'exampleNode',
+		displayName: 'Extract from E-Invoice',
+		name: 'extractFromEInvoice',
 		group: ['transform'],
 		version: 1,
-		description: 'Basic Example Node',
+		description: 'Extract Informations from a PDF file containing XML Informations (ZUGFeRD / XRechnung / Factur-X / EN-16931)',
 		defaults: {
-			name: 'Example Node',
+			name: 'Extract from E-Invoice',
 		},
 		inputs: [NodeConnectionType.Main],
 		outputs: [NodeConnectionType.Main],
