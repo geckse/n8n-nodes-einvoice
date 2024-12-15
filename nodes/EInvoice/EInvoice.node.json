@@ -1,0 +1,20 @@
+{
+	"node": "n8n-nodes-base.extractFromEInvoice",
+	"nodeVersion": "0.1",
+	"codexVersion": "1.0",
+	"categories": ["Data Transformation"],
+	"resources": {
+	},
+	"alias": [
+        "X-Rechnung",
+        "ZUGFeRD",
+        "Factur-X",
+        "EN-16931",
+        "E-Invoice",
+        "E-Rechnung",
+        "Invoice"
+	],
+	"subcategories": {
+		"Core Nodes": ["Files", "Data Transformation"]
+	}
+}

@@ -1,9 +1,17 @@
 {
   "name": "n8n-nodes-einvoice",
   "version": "0.1.0",
-  "description": "n8n.io node to extract E-Invoice Informations from a PDF containing those XML Informations (ZUGFeRD / XRechnung / Factur-X / EN-16931)",
+  "description": "n8n.io node to handle E-Invoices with PDF or XML Files (ZUGFeRD / XRechnung / Factur-X / EN-16931)",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "einvoice",
+    "e-invoice",
+    "e-rechnung",
+    "x-rechnung",
+    "factur-x",
+    "en-16931",
+    "zugferd",
+    "invoice"
   ],
   "license": "MIT",
   "homepage": "",
@@ -22,26 +30,26 @@
   "packageManager": "pnpm@9.1.4",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
-    "format": "prettier nodes credentials --write",
-    "lint": "eslint nodes credentials package.json",
-    "lintfix": "eslint nodes credentials package.json --fix",
-    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes credentials package.json"
+    "format": "prettier nodes --write",
+    "lint": "eslint nodes package.json",
+    "lintfix": "eslint nodes package.json --fix",
+    "prepublishOnly": "pnpm build && pnpm lint -c .eslintrc.prepublish.js nodes package.json"
   },
   "files": [
     "dist"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
-    "credentials": [
-    ],
+    "credentials": [],
     "nodes": [
-      "dist/nodes/EInvoiceNode/EInvoiceNode.node.js"
+      "dist/nodes/EInvoice/EInvoice.node.js"
     ]
   },
   "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "@types/xml2js": "^0.4.14",
     "@typescript-eslint/parser": "^7.15.0",
     "eslint": "^8.56.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
@@ -52,5 +60,10 @@
   },
   "peerDependencies": {
     "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "pdfjs-dist": "^2.16.105",
+    "xml2js": "^0.6.2"
   }
 }
