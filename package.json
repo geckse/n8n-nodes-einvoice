@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-einvoice",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "n8n.io node to handle E-Invoices with PDF or XML Files (ZUGFeRD / XRechnung / Factur-X / EN-16931)",
   "keywords": [
     "n8n-community-node-package",
@@ -54,16 +54,13 @@
     "eslint": "^8.56.0",
     "eslint-plugin-n8n-nodes-base": "^1.16.1",
     "gulp": "^4.0.2",
-    "n8n-workflow": "*",
     "prettier": "^3.3.2",
     "typescript": "^5.5.3"
-  },
-  "peerDependencies": {
-    "n8n-workflow": "*"
   },
   "dependencies": {
     "lodash": "^4.17.21",
     "pdfjs-dist": "^2.16.105",
-    "xml2js": "^0.6.2"
+    "xml2js": "^0.6.2",
+    "n8n-workflow": "^1.72.0"
   }
 }
