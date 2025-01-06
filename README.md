@@ -31,16 +31,22 @@ It also should automatically install depencies (which should be the same n8n use
 
 ## Compatibility
 
-The Latest Version of n8n. If you encounter any problem, feel free to [open an issue](https://github.com/geckse/n8n-nodes-einvoice) on Github. 
+The Latest Version of n8n (at least 1.72.x). If you encounter any problem, feel free to [open an issue](https://github.com/geckse/n8n-nodes-einvoice) on Github. 
 
 ## About
 
-<img src="https://cloud.let-the-work-flow.com/logo-64.png" align="left" height="64" width="64"> 
-<br>
-Hi I'm geckse and I let your work flow! 👋 
-I hope you are enjoying these nodes. If you are in need of a smooth automation, steady integration or custom code check my page: https://let-the-work-flow.com
+<img src="https://cloud.let-the-work-flow.com/kontoflux-icon.png" align="left" height="64" width="64"> 
+Hi, I’m geckse! Beside building Automations I’ve also built a SaaS that automates your bank accounts and makes them accessible for your automations! 👋
+This node is a small sponsorship of my ongoing effort to help you automate your cashflow processes. 💸 <br><br>
+If you want to not only extract invoice data but also match payments with your bank accounts, check out my SaaS: https://kontoflux.io
 
 ## Version History
+
+### 0.1.2
+- stable release
+
+### 0.1.1
+- depency fix
 
 ### 0.1.0
 - initial release
